@@ -9,7 +9,6 @@ function Thermostat() {
     if (!this.powerSave && this.temp < 32) {
       this.temp += 1;
     }
-    console.log('HI!!');
     this.setColour();
   };
   Thermostat.prototype.decrease = function() {
