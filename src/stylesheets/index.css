@@ -1,4 +1,5 @@
 body {
+  text-align: center;
    background-color: white;
 }
 
@@ -21,8 +22,7 @@ div {
     font-size: 30px
 }
 button {
-  width: 200px;
-  margin-left: 150px;
+
   border-top: 1px solid #ffffff ;
   background: #4a4a4a ;
   background: -webkit-gradient(linear, left top, left bottom, from(#636363 ), to(#4a4a4a ));
@@ -45,7 +45,7 @@ button {
   vertical-align: middle;
   }
 .button:hover {
-  border-top-color: #1d1f21 ;
+  
   background: #1d1f21 ;
   color: #000000 ;
   }
