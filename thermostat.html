@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+ 
   <title>Thermostat</title>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -15,13 +15,29 @@
 
 </head>
 
-<body>
-  <div id="temperature">
-  </div>
+<body id = 'animate-area'>
+  <div id="temperature"></div>
   <button type="button" id="up">&#8593 </button>
   <button type="reset" id="reset">&#8634</button>
 
   <button type="button" id="down">&#8595</button>
+  <br></br>
+
+  <select id = "city">
+  <option value="London">London</option>
+  <option value="Barcelona">Barcelona</option>
+  <option value="Orlando">Orlando</option>
+  <option value="Edinbourgh">Edinbourgh</option>
+  <option value="New York">New York</option>
+  <option value="Hong Kong">Hong Kong</option>
+  <option value="Paris">Paris</option>
+  <option value="Sydney">Sydney</option>
+</select>
+
+
+  <div id="outside_temp"></div>
+  <div id="weather"></div>
+  <div id="forecast"></div>
 
   <input type='checkbox' id='powersaver' value ="Power Saver" checked> Power Saver On<br>
 </body>

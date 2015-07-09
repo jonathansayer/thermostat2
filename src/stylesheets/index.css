@@ -1,6 +1,11 @@
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100000% 0%; }
+}
+
 body {
   text-align: center;
-   background-color: white;
+  background-color: #33CCFF;
 }
 
 h1  {
@@ -13,14 +18,55 @@ font{
     
     text-align: center;
 }
+
 p {
    font-family: "Termostat";
    font-size: 15px;
 }
+
+#animate-area { 
+  width: 560px; 
+  height: 1000px; 
+  background-image: url(sky_texture.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+
+  animation: animatedBackground 4000s linear infinite;
+}
+
+#temperature{
+  text-align: center;
+   width: 500px;
+   margin-top: 150px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+#city{
+  margin-top :10px;
+  margin-left:225px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#outside_temp{
+  margin-left:200px;
+}
+#weather{
+  margin-left:200px;
+}
+
+#forecast{
+  margin-left:200px;
+}
+
 div {
     text-align: center;
     font-size: 30px
+
 }
+#up{
+  margin-left:225px;
+}
+
 button {
 
   border-top: 1px solid #ffffff ;
@@ -43,13 +89,10 @@ button {
   font-family: Helvetica, Arial, Sans-Serif;
   text-decoration: none;
   vertical-align: middle;
+  margin-bottom: 20px;
+  text-align: center;
   }
-.button:hover {
-  
-  background: #1d1f21 ;
-  color: #000000 ;
-  }
-.button:active {
-  border-top-color: #ffffff ;
-  background: #ffffff ;
+
+  #powersaver{
+    margin-left: 250px;
   }
