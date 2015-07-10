@@ -59,7 +59,7 @@ city()
 $.getJSON('http://api.openweathermap.org/data/2.5/find?q=' + city()+'&units=metric',
   {},
   function (response) {
-    $("#outside_temp").text("The Weather in " + city()+" is: "+response.list[0].main.temp + " degrees Celsius");
+    $("#outside_temp").text("The Temperature in " + city()+" is: "+response.list[0].main.temp + " degrees Celsius");
   });
 
 $.getJSON('http://api.openweathermap.org/data/2.5/find?q=' + city()+'&units=metric',
